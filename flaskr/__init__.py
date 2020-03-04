@@ -23,12 +23,10 @@ def create_app(test_config=None):
     @app.route('/hello')
     def hello():
         return 'Hello world! Does this trickle down?'
-    return app
 
-    # # THIS DOESNT work
-    # a simple index page
+    # THIS DOESNT work
+    a simple index page
 
-    # @app.route('/welcome')
-    # def welcome():
-    #     return 'Welcome to my little world'
-    # return app
+    @app.route('/')
+    def index():
+        return 'Welcome to my little world'
