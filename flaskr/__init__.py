@@ -24,9 +24,11 @@ def create_app(test_config=None):
     def hello():
         return 'Hello world! Does this trickle down?'
     return app
-    
-    #a simple index page
-    @app.route('/welcome')
-    def welcome():
-        return 'Welcome to my little world'
-    return app
+
+    # # THIS DOESNT work
+    # a simple index page
+
+    # @app.route('/welcome')
+    # def welcome():
+    #     return 'Welcome to my little world'
+    # return app
