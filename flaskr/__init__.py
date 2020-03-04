@@ -22,10 +22,11 @@ def create_app(test_config=None):
     #a simple page to say hello
     @app.route('/hello')
     def hello():
-        return 'Hello world!'
+        return 'Hello world! Does this trickle down?'
     return app
+    
     #a simple index page
-    @app.route('')
+    @app.route('/welcome')
     def welcome():
         return 'Welcome to my little world'
     return app
